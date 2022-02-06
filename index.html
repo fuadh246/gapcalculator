@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-    <style scr="script.js"></style>
+    <!--
+        <link rel="stylesheet" href="css/main.css">
+    -->
 </head>
 <body>
     <div class="heading">
         <h1>GPA Calculator</h1>
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
-    <div class="input_div">
+    <div class="input_div" id="input_div">
         <label>Class name:</label>
-        <input type="text">
+        <input id="class_name" name="Class name: " type="text">
         <label for="cars">Grade</label>
-        <select name="cars" id="cars">
-            <option value=""></option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
+        <select name="" id="grade">
+            <option id="none" value=""></option>
+            <option id="A" value="A">A</option>
+            <option id="B" value="B">B</option>
+            <option id="C" value="C">C</option>
+            <option id="D" value="D">D</option>
         </select>
         <label>Credit/Hours</label>
-        <input type="number" name="" id="">
+        <input id="credit" type="number" name="" id="">
         <br>
     </div>
     <div class="add_sub">
-        <button class="button-13">ADD More</button>
-        <button class="button-13" type="submit">Submit</button>
+        <button id="add_more" class="button-13">ADD More</button>
+        <button id="remove" class="button-13">Remove</button>
+        <button class="button-13" id="submit" type="submit">Submit</button>
     </div>
+    <output id="result">0</output>
 
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>
