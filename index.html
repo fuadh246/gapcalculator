@@ -4,36 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GPA?</title>
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
     <div class="heading">
         <h1>GPA Calculator</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Find your GPA within minutes with these quick steps:
+            <li> Your Letter Grade</li>
+            <li>Add Your Class Credits</li>
+            <li>Calculate your GPA</li>
+        </p>
     </div>
     <div class="input_div" id="input_div">
         <label>Class name:</label>
-        <input id="class_name" name="Class name: " type="text">
-        <label >Grade</label>
-        <select name="" id="grade">
+        <input id="class_name1" name="Class name: " type="text">
+        <label >Grade: </label>
+        <select name="" id="grade1">
             <option id="none" value=""></option>
             <option id="A" value="A">A</option>
             <option id="B" value="B">B</option>
             <option id="C" value="C">C</option>
             <option id="D" value="D">D</option>
         </select>
-        <label >Credit/Hours</label>
-        <input id="credit" type="number" name="" id="">
+        <label >Credit/Hours: </label>
+        <input id="credit1" type="number" >
         <br>
     </div>
+    <div class="input_div" id="input_div">
+        <label>Class name:</label>
+        <input id="class_name2" name="Class name: " type="text">
+        <label >Grade: </label>
+        <select name="" id="grade2">
+            <option id="none" value=""></option>
+            <option id="A" value="A">A</option>
+            <option id="B" value="B">B</option>
+            <option id="C" value="C">C</option>
+            <option id="D" value="D">D</option>
+        </select>
+        <label >Credit/Hours: </label>
+        <input id="credit2" type="number" name="" >
+        <br>
+    </div>
+    <div class="input_div" id="input_div">
+        <label>Class name:</label>
+        <input id="class_name3" name="Class name: " type="text">
+        <label >Grade: </label>
+        <select name="" id="grade3">
+            <option id="none" value=""></option>
+            <option id="A" value="A">A</option>
+            <option id="B" value="B">B</option>
+            <option id="C" value="C">C</option>
+            <option id="D" value="D">D</option>
+        </select>
+        <label >Credit/Hours: </label>
+        <input id="credit3" type="number" name="" >
+        <br>
+    </div>
+    <div class="input_div" id="input_div">
+        <label>Class name:</label>
+        <input id="class_name4" name="Class name: " type="text">
+        <label >Grade: </label>
+        <select name="" id="grade4">
+            <option id="none" value=""></option>
+            <option id="A" value="A">A</option>
+            <option id="B" value="B">B</option>
+            <option id="C" value="C">C</option>
+            <option id="D" value="D">D</option>
+        </select>
+        <label >Credit/Hours: </label>
+        <input id="credit4" type="number" name="" id="">
+        <br>
+    </div>
+    <div class="input_div" id="input_div">
+        <label>Class name:</label>
+        <input id="class_name5" name="Class name: " type="text">
+        <label >Grade: </label>
+        <select name="" id="grade5">
+            <option id="none" value=""></option>
+            <option id="A" value="A">A</option>
+            <option id="B" value="B">B</option>
+            <option id="C" value="C">C</option>
+            <option id="D" value="D">D</option>
+        </select>
+        <label >Credit/Hours: </label>
+        <input id="credit5" type="number" name="">
+        <br>
+    </div>
+    
+    
     <div class="add_sub">
         <button id="add_more" class="button-13">ADD More</button>
         <button id="remove" class="button-13">Remove</button>
-        <button class="button-13" id="submit" type="submit">Submit</button>
+        <button class="button-13" id="submit" type="submit">Calculate</button>
     </div>
-    <output id="result">0</output>
+    <div class="result">
+        <output id="result">0</output>
+    </div>
+    <div>
+        <p>Thank you for using GPA Calculator</p>
+        <br>
+        <br>
+        <br>
+        <p id="made">made by Fuad Hassan</p>
+    </div>
 
 </body>
 <script type="text/javascript" src="script.js"></script>
