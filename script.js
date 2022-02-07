@@ -25,8 +25,6 @@ submit.onclick = function(){
     var grade1_value;
 
     var sumofcredit = (Number(credit1)+Number(credit2)+Number(credit3)+Number(credit4)+Number(credit5));
-
-
     if(grade1 == 'A' ){
         grade1_value = 4;
     }else if(grade1 == 'B' ){
@@ -72,8 +70,6 @@ submit.onclick = function(){
     }else if(grade5 == 'D' ){
         var grade5_value = 1;
     }
-    //alert(grade1_value);
-    //alert(credit1);
 
     if(grade1 == '' || credit1 == null){
        var sumofgrade1 = 0;
@@ -100,15 +96,7 @@ submit.onclick = function(){
     }else{
         var sumofgrade5 =+ Number(grade5_value*credit5);
     }
-    
-    
-    /*sumofgrade =+ Number(grade2_value*credit2);
-    sumofgrade =+ Number(grade3_value*credit3);
-    sumofgrade =+ Number(grade4_value*credit4);
-    sumofgrade =+ Number(grade5_value*credit5);
-    */
     var sumofgrade = Number(sumofgrade1+sumofgrade2+sumofgrade3+sumofgrade4+sumofgrade5);
-    alert(sumofgrade);
 
     var gpa = (sumofgrade)/sumofcredit;
     result.innerHTML = gpa;
