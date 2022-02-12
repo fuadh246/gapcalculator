@@ -11,28 +11,34 @@ var class_name3 = document.getElementById('class_name1').value;
 var class_name4 = document.getElementById('class_name1').value;
 var class_name5 = document.getElementById('class_name1').value;
 
+var grade12 = document.getElementById('grade1');
 var bundel = document.getElementById('bundel');
+var class_name12 = document.getElementById('class_name1');
 
 add_more.onclick = function(){
     var newbundel = document.createElement("div");
+    var newClass = document.createElement('input');
+    var newGrade = document.createElement('select');
     newbundel.setAttribute('id','input_div');
     newbundel.setAttribute('class','input_div');
-    newbundel.
     bundel.append(newbundel);
+    newGrade.setAttribute('id','grade1');
+    newClass.setAttribute('id','class_name1');
+    newbundel.append(newClass);
+    newbundel.append(newGrade);
 }
 
 submit.onclick = function(){
-    var grade1 = document.getElementById('grade1').value;
-    var grade2 = document.getElementById('grade2').value;
-    var grade3 = document.getElementById('grade3').value;
-    var grade4 = document.getElementById('grade4').value;
-    var grade5 = document.getElementById('grade5').value;
-    var credit1 = document.getElementById('credit1').value;
-    var credit2 = document.getElementById('credit2').value;
-    var credit3 = document.getElementById('credit3').value;
-    var credit4 = document.getElementById('credit4').value;
-    var credit5 = document.getElementById('credit5').value;
-    
+var grade1 = document.getElementById('grade1').value;
+var grade2 = document.getElementById('grade2').value;
+var grade3 = document.getElementById('grade3').value;
+var grade4 = document.getElementById('grade4').value;
+var grade5 = document.getElementById('grade5').value;
+var credit1 = document.getElementById('credit1').value;
+var credit2 = document.getElementById('credit2').value;
+var credit3 = document.getElementById('credit3').value;
+var credit4 = document.getElementById('credit4').value;
+var credit5 = document.getElementById('credit5').value;
     var sumofcredit = 0;
     sumofcredit = (Number(credit1)+Number(credit2)+Number(credit3)+Number(credit4)+Number(credit5));
 
