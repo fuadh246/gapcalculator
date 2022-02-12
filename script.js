@@ -11,13 +11,15 @@ var class_name3 = document.getElementById('class_name1').value;
 var class_name4 = document.getElementById('class_name1').value;
 var class_name5 = document.getElementById('class_name1').value;
 
-//var grade12 = document.getElementById('grade1');
-//var bundel = document.getElementById('bundel');
-
 add_more.onclick = function(){
     const node = document.getElementById("bundel");
     const clone = node.cloneNode(true);
-    document.body.appendChild(clone);
+    all_input.appendChild(clone);
+}
+remove.onclick = function(){
+    const node = document.getElementById("bundel");
+    const clone = node.cloneNode(true);
+    bundel.remove(clone);
 }
 
 submit.onclick = function(){
