@@ -11,21 +11,13 @@ var class_name3 = document.getElementById('class_name1').value;
 var class_name4 = document.getElementById('class_name1').value;
 var class_name5 = document.getElementById('class_name1').value;
 
-var grade12 = document.getElementById('grade1');
-var bundel = document.getElementById('bundel');
-var class_name12 = document.getElementById('class_name1');
+//var grade12 = document.getElementById('grade1');
+//var bundel = document.getElementById('bundel');
 
 add_more.onclick = function(){
-    var newbundel = document.createElement("div");
-    var newClass = document.createElement('input');
-    var newGrade = document.createElement('select');
-    newbundel.setAttribute('id','input_div');
-    newbundel.setAttribute('class','input_div');
-    bundel.append(newbundel);
-    newGrade.setAttribute('id','grade1');
-    newClass.setAttribute('id','class_name1');
-    newbundel.append(newClass);
-    newbundel.append(newGrade);
+    const node = document.getElementById("bundel");
+    const clone = node.cloneNode(true);
+    document.body.appendChild(clone);
 }
 
 submit.onclick = function(){
