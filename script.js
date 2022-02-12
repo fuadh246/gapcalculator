@@ -11,6 +11,16 @@ var class_name3 = document.getElementById('class_name1').value;
 var class_name4 = document.getElementById('class_name1').value;
 var class_name5 = document.getElementById('class_name1').value;
 
+var bundel = document.getElementById('bundel');
+
+add_more.onclick = function(){
+    var newbundel = document.createElement("div");
+    newbundel.setAttribute('id','input_div');
+    newbundel.setAttribute('class','input_div');
+    newbundel.
+    bundel.append(newbundel);
+}
+
 submit.onclick = function(){
     var grade1 = document.getElementById('grade1').value;
     var grade2 = document.getElementById('grade2').value;
