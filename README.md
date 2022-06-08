@@ -1,3 +1,3 @@
 # gapcalculator
 
-[Link to page](https://www.google.com](https://gpacalculator101.netlify.app/)
+[Link to page](https://gpacalculator101.netlify.app/)
